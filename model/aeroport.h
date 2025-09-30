@@ -27,4 +27,7 @@ void infoAeroport(Aeroport *aeroport);
 // Function to search
 void searchAeroport(AeroportNode* head);
 
+// Function to sort data by bubble sort algo.
+void bubbleSort(AeroportNode *head);
+
 #endif

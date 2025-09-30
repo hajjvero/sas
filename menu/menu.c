@@ -51,6 +51,7 @@ void showMainMenu()
     displayByColor(" [3]\tSupprimer\n", COLOR_GREEN);
     displayByColor(" [4]\tAfficher la liste\n", COLOR_GREEN);
     displayByColor(" [5]\tRechercher\n", COLOR_GREEN);
+    displayByColor(" [6]\tTri\n", COLOR_GREEN);
     printf("\n\n");
 }
 
@@ -83,6 +84,11 @@ void handleMainChoice(int choice, AeroportNode **list)
         menuSubTitle("Rechercher");
         searchAeroport(*list);
         break;    
+    case 6:
+        // Search
+        menuSubTitle("Tri");
+        bubbleSort(*list);
+        break;       
     case 0:
         displayClear();
         displayByColor("Merci d'utiliser notre application!\n", COLOR_BLUE);
