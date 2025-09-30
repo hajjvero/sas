@@ -2,7 +2,10 @@
 #include "menu/menu.h"
 #include "util/display.h"
 
-int main() {
+int main()
+{
+    AeroportNode *list = NULL;
+
     int choice;
     do {
         showMainMenu();
@@ -10,7 +13,7 @@ int main() {
         displayByColor("Entrez votre choix: ", COLOR_MAGENTA);
         scanf("%d", &choice);
 
-        handleMainChoice(choice);
+        handleMainChoice(choice, &list);
     } while (choice != 0);
 
     return 0;

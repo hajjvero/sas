@@ -1,5 +1,6 @@
 #ifndef MENU_H
 #define MENU_H
+#include "../model/aeroport.h"
 
 // Function to display title of application
 void menuTitle(char* name);
@@ -8,6 +9,6 @@ void menuTitle(char* name);
 void showMainMenu();
 
 // Function to tretment choice of user.
-void handleMainChoice(int choice);
+void handleMainChoice(int choice, AeroportNode **list);
 
 #endif
